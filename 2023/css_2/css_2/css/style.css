@@ -37,70 +37,70 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 body{
-    font-family: "Arial MT";
-    line-height: 45px;
+	font-family: "Arial MT";
+	line-height: 45px;
 }
 .p1 {
-    color: #445161;
-    font-size: 30px;
-    line-height: 30px;
+	color: #445161;
+	font-size: 30px;
+	line-height: 30px;
 
 }
 .p2 {
-    color: #333333;
-    line-height: 25px;
+	color: #333333;
+	line-height: 25px;
 }
 .p3 {
-    color: #445161;
-    font-size: 25px;
-    line-height: 30px;
+	color: #445161;
+	font-size: 25px;
+	line-height: 30px;
 }
 .p4 {
-    color: #333333;
-    font-weight: bold;
+	color: #333333;
+	font-weight: bold;
 }
 .p5 {
-    color: #ff0000;
+	color: #ff0000;
 }
 .p6 {
-    color: #445161;
-    font-size: 20px;
-    line-height: 30px;
+	color: #445161;
+	font-size: 20px;
+	line-height: 30px;
 }
 .p7 {
-    color: #333333;
-    text-align: right;
+	color: #333333;
+	text-align: right;
 }
 .p8 {
-    color: #333333;
-    text-transform: uppercase;
+	color: #333333;
+	text-transform: uppercase;
 }
 .p9 {
-    color: #333333;
-    font-style: italic;
+	color: #333333;
+	font-style: italic;
 }
 .p10 {
-    color: #333333;
-    text-decoration: underline;
+	color: #333333;
+	text-decoration: underline;
 }
 .p11 {
-    color: #333333;
-    text-align: center;
+	color: #333333;
+	text-align: center;
 }
 .p12 {
-    color: #333333;
-    font-size: 24px;
-    line-height: 24px;
+	color: #333333;
+	font-size: 24px;
+	line-height: 24px;
 }
 .p13 {
-    color: #333333;
-    text-decoration: line-through;
+	color: #333333;
+	text-decoration: line-through;
 }
 .p14 {
-    color: #333333;
-    font-family: "Times New Roman PSMT";
+	color: #333333;
+	font-family: "Times New Roman PSMT";
 }
 .p15 {
-    text-shadow: 1px 1px 1px #000000;
-    color: #333333;
+	text-shadow: 1px 1px 1px #000000;
+	color: #333333;
 }
