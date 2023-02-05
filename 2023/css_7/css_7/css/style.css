@@ -1,0 +1,120 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+	padding: 150px;
+}
+.list {
+	margin: 0px 0px 30px 0px;
+}
+.list li{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #273d46;
+	font-size: 20px;
+	line-height: 36px;
+}
+.list li::before{
+	content: url(../img/icons/check_icon.png);
+	margin: 0px 10px 0px 0px;;
+}
+.list li:nth-child(1){
+	text-decoration: line-through;
+}
+.list li:nth-child(2){
+	font-weight: 700;
+}
+.list li:nth-child(3){
+	font-style: italic;
+}
+.list li:nth-child(4){
+	text-transform: uppercase
+}
+
+.list-2 {
+	margin: 0px 0px 30px 0px;
+	display: inline-block;
+}
+.list-2 li{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #273d46;
+	font-size: 20px;
+	line-height: 36px;
+	text-align: left;
+}
+.list-2 li:hover{
+	color: #d55a5a;
+}
+.list-2 li::before{
+	content: url(../img/icons/check_icon.png);
+	margin: 0px 10px 0px 0px;;
+}
+.list-2 li:hover::before{
+	content: url(../img/icons/check_icon_red.png);
+}
+
+.buttonbox{
+	margin: 0px 0px 30px 0px;;
+}
+.button {
+	display: inline-block;
+	background-color: #80b7b3;
+	border-radius: 50px;
+	padding: 0px 0px 0px 30px;
+	width: 199px;
+	height: 44px;
+	line-height: 44px;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+}
+.button:hover{
+	background-color: #3a5856;
+}
+.button:active{
+	background-color: #818181;
+	box-shadow: none;
+}
+.button__text {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #ffffff;
+	line-height: 44px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+}
+.button__text::after{	
+	content: url(../img/icons/Shape_2.png);
+}
+
+.fline {
+	margin: 0px 0px 30px 0px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 700;
+}
+.fline::first-line{
+	color: red;
+}
+
+.fletter {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 700;
+	padding: 0 0 150px 0;;
+}
+.fletter::first-letter{
+	color: red;
+}
