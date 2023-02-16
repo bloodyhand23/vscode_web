@@ -73,3 +73,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.main {
+  position: relative;
+  z-index: 2;
+  background: url("../../img/header/Color_Fill_1.png") 0 0/cover no-repeat;
+}
+.main__header {
+  position: relative;
+  z-index: 3;
+  background: url("../../img/header/Rectangle_1_copy_2.png") 0 0/cover no-repeat;
+}
+.main__home {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main__row {
+  padding: 60px 0 170px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main__dart {
+  background: url("../../img/header/icons/Shape_1.png") 0 0 no-repeat;
+  padding: 0 0 0 40px;
+}
+.main__dart a {
+  display: inline-block;
+  color: #fff;
+  font-family: "Raleway - Extra Bold";
+  font-size: 15px;
+  line-height: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-weight: 400;
+  font-weight: 700;
+}
+.main__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__menu a {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 25px 0 25px;
+}
+.main__menu a:hover {
+  color: #000;
+}
+.main__registration {
+  font-size: 12px;
+  line-height: 25px;
+}
+.main__registration a {
+  border: 1px solid #fff;
+  color: #ffffff;
+  padding: 6px 20px;
+  border-radius: 2px;
+}

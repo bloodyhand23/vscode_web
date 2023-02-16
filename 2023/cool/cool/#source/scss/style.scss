@@ -5,28 +5,77 @@
 }
 .wrapper {
 }
+	
 .main {
-
+	position: relative;
+	z-index: 2;
+	background: url("../../img/header/Color_Fill_1.png") 0 0/cover no-repeat;
 		&__header {
+			position: relative;
+			z-index: 3;
+			background: url("../../img/header/Rectangle_1_copy_2.png") 0 0/cover no-repeat;
 		}
 
 		&__home {
+			max-width: 1440px;
+			margin: 0 auto;
 		}
 
 		&__row {
+			padding: 60px 0 170px 0;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		&__dart {
+			background:url("../../img/header/icons/Shape_1.png") 0 0 no-repeat;
+			padding: 0 0 0 40px;
+		}
+
+		&__dart a{
+			display: inline-block;
+			color: #fff;
+			font-family: "Raleway - Extra Bold";
+			font-size: 15px;
+			line-height: 15px;
+			text-align: left;
+			text-transform: uppercase;
+			font-family: Raleway;
+			font-weight: 400;
+			font-weight: 700;
 		}
 
 		&__menu {
 		}
 
-		&__registration {
+		&__menu ul{
+			display: flex;
+			align-items: center;
+		}
+
+		&__menu a{
+			color: #ffffff;
+			font-size: 15px;
+			line-height: 25px;
+			margin: 0 25px 0 25px;
+			&:hover{
+				color: #000;
+			}
+		}
+
+		&__registration{
+			font-size: 12px;
+			line-height: 25px;
+		}
+
+		&__registration a{
+			border: 1px solid #fff;
+			color: #ffffff;
+			padding: 6px 20px;
+			border-radius: 2px;
 		}
 }
-.logo {
-}
+
 .list {
 }
 .registration-button {
