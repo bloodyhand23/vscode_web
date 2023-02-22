@@ -196,11 +196,6 @@
 	&__text {	
 		max-width: 565px;
 		margin: 0 auto 97px;
-		color: #b0bec5;
-		font-family: Raleway;
-		font-size: 15px;
-		line-height: 25px;
-		text-align: center;
 	}
 
 	&__row {
@@ -253,6 +248,14 @@
 	font-size: 45px;
 	font-weight: 600;
 	text-align: center;
+}
+
+.text {
+	color: #b0bec5;
+	font-family: Raleway;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: center;	
 }
 
 .button {
@@ -323,6 +326,103 @@
 		background-color: #ea80fc;
 	}
 }
+
+// Блок сервисы
+
+.services {
+	max-width: 800px;
+	margin: 0 auto;
+	&__header {
+	}
+
+	&__title {
+		margin: 100px 0 30px 0;
+	}
+
+	&__text {
+		max-width: 565px;
+		margin: 0 auto 48px;
+	}
+
+	&__dropdown {
+		padding: 0 0 100px 0;
+	}
+
+	&__row {
+	}
+
+	&__item{
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		background-color: #ffffff;
+		margin: 0 0 20px 0;
+		&:last-child{
+			margin: 0;
+		}
+	}
+
+	&__item-top {
+		max-width: 800px;
+		line-height: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item-box{
+		display: flex;
+	}
+
+	&__image-top {
+		display: flex;
+		align-items: center;
+		padding: 0 0 0 24px;
+		& img{
+			width: 20px;
+		}
+	}
+
+	&__name-top {
+		max-width: 690px;
+		color: #061e37;
+		font-family: Raleway;
+		font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 0 0 0 24px;
+	}
+	&__arrow{
+		display: flex;
+		align-items: center;
+		padding: 0 24px 0 0;
+	}
+
+
+	&__item-content {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 24px 24px;
+	}
+
+	&__image-content {
+		flex: 0 0 250px;
+	}
+
+	&__text-content {
+		margin: 0 0 0 25px;
+		width: 467px;
+		color: #061e37;
+		font-family: Raleway;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: left;
+		letter-spacing: 0.45px;
+		& p:nth-child(1){
+			padding: 0 0 36px 0;
+		}
+	}
+}
+
 
 
 
