@@ -9,14 +9,8 @@
 
 //На главной странице header и меню
 .main {
-	height: 100%;
-	position: relative;
-	z-index: 2;
 	background: url("../../img/header/Color_Fill_1.png") 0 0/cover no-repeat;
 		&__header {
-			padding: 10px;
-			position: relative;
-			z-index: 3;
 			background: url("../../img/header/Rectangle_1_copy_2.png") 0 0/cover no-repeat;
 		}
 
@@ -420,6 +414,129 @@
 		}
 	}
 }
+
+// Блок What
+
+.what {
+	background: url("../../img/what/Rectangle_1_copy_3.png") 0 0/cover no-repeat;
+	
+	&__content{
+		background: url("../../img/what/Rectangle_1_copy_5.png") 0 0/cover no-repeat;
+	}
+	&__row {
+		display: flex;
+		max-width: 1440px;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__left {
+		margin: 134px 0;
+	}
+
+	&__title {
+		max-width: 441px;
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 45px;
+		font-weight: 400;
+		margin: 0 0 20px 0;
+		line-height: 55px;
+	}
+
+	&__subtitle {
+		max-width: 514px;
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 30px;
+		margin: 0 0 85px 0;
+	}
+
+	&__get {		
+		& a{
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+			border-radius: 5px;
+			background-color: #061e37;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 150px;
+			height: 55px;
+			color: #ffffff;
+			font-family: Roboto;
+			font-size: 15px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__right {	
+	}
+
+	&__box{
+		margin: 0 0 70px 0;
+		&:last-child{
+			margin: 0;
+		}
+	}
+
+	&__arrow-up{
+		margin: 0 325px 33px 0;
+		text-align: right;
+	}
+
+	&__arrow-down {
+		text-align: right;
+		margin: 33px 325px 0 0;
+	}
+
+	&__right-block {
+		display: flex;	
+	}
+
+	&__image {
+		display: flex;
+		align-items: center;
+		margin: 0 50px;
+	}
+
+	&__description-top {
+		width: 650px;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+		border-radius: 5px;
+		background-color: #ffffff;
+		padding: 30px;
+	}
+
+	&__description-down {
+		width: 650px;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+		border-radius: 5px;
+		background-color: #ffffff;
+		padding: 30px;
+	}
+
+	&__description-title {
+		color: #061e37;
+		font-family: Raleway;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 25px;
+		margin: 0 0 20px 0;
+	}
+
+	&__description-text {
+		max-width: 555px;
+		color: #78909c;
+		font-family: Raleway;
+		font-size: 15px;
+		font-style: italic;
+		line-height: 25px;
+	}
+}
+
 
 
 
