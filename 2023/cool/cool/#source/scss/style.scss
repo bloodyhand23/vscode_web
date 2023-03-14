@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 body {
-	min-width: 1440px;
 }
 
 .wrapper {
@@ -175,19 +174,25 @@ body {
 .registration-button {
 }
 
-// на главной странице контент и видео
-
-.main {
-
-
-}
-
 // Блок Easy
 
 .easy {
-	margin: 0 auto;
-	max-width: 1460px;
-	padding: 0 10px;
+
+
+	&__container{
+		margin: 0 auto;
+		max-width: 1454px;
+		padding: 0 10px;
+		@media (max-width:1200px) {
+			max-width: 970px;
+		}
+		@media (max-width:992px) {
+			max-width: 750px;
+		}
+		@media (max-width:767px) {
+			max-width: none;
+		}
+	}
 	&__top {
 	}
 
@@ -210,15 +215,25 @@ body {
 	}
 
 	&__row {
+		max-width: 1434px;
 		display: flex;
 		align-items: flex-end;
 		justify-content: space-between;
 		margin: 0 -10px;
+		@media (max-width:1200px) {
+		}
+		@media (max-width:992px) {
+		}
+		@media (max-width:767px) {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 	&__element {
+		flex: 0 1 33,3%;
 		text-align: center;
-		max-width: 360px;
+		max-width: 365px;
 		margin: 0 0 78px;
 		padding: 0 10px;
 	}
@@ -242,6 +257,7 @@ body {
 		font-size: 15px;
 		line-height: 20px;
 		text-align: center;
+		max-width: 360px;
 	}
 
 	&__tap{

@@ -74,10 +74,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body {
-  min-width: 1440px;
-}
-
 .main {
   background: url("../../img/header/Color_Fill_1.png") 0 0/cover no-repeat;
 }
@@ -243,10 +239,25 @@ body {
   text-transform: uppercase;
 }
 
-.easy {
+.easy__container {
   margin: 0 auto;
-  max-width: 1460px;
+  max-width: 1454px;
   padding: 0 10px;
+}
+@media (max-width: 1200px) {
+  .easy__container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .easy__container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .easy__container {
+    max-width: none;
+  }
 }
 .easy__title {
   margin: 100px 0 25px 0;
@@ -264,6 +275,7 @@ body {
   margin: 0 auto 97px;
 }
 .easy__row {
+  max-width: 1434px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,9 +287,18 @@ body {
           justify-content: space-between;
   margin: 0 -10px;
 }
+@media (max-width: 767px) {
+  .easy__row {
+    display: block;
+    margin: 0 auto;
+  }
+}
 .easy__element {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33, 3%;
+          flex: 0 1 33, 3%;
   text-align: center;
-  max-width: 360px;
+  max-width: 365px;
   margin: 0 0 78px;
   padding: 0 10px;
 }
@@ -298,6 +319,7 @@ body {
   font-size: 15px;
   line-height: 20px;
   text-align: center;
+  max-width: 360px;
 }
 .easy__tap {
   text-align: center;
