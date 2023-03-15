@@ -20,7 +20,7 @@ body {
 		&__home {
 			max-width: 1460px;
 			margin: 0 auto;
-			padding: 0 10px;
+			padding: 0 10px 187px;
 			font-family: Raleway;
 		}
 
@@ -83,12 +83,30 @@ body {
 			display: flex;
 			justify-content: space-between;
 			margin: 0 -10px;
-			padding: 0 10px;
+			@media (max-width:1200px) {
+				margin: 0 auto;
+			}
+			@media (max-width:992px) {
+				max-width: 750px;
+			}
+			@media (max-width:767px) {
+				max-width: none;
+			}
 		}
 	
 		&__content {
+			padding: 0 10px;
 			max-width: 600px;
-			margin: 0 0 180px 0;
+			flex: 0 0 600px;
+			@media (max-width:1200px) {
+				margin: 0 auto;
+			}
+			@media (max-width:992px) {
+				max-width: 750px;
+			}
+			@media (max-width:767px) {
+				max-width: none;
+			}
 		}
 	
 		&__title {
@@ -106,6 +124,7 @@ body {
 			font-size: 18px;
 			line-height: 35px;
 			margin: 0 0 28px 0;
+			
 		}
 	
 		&__button {
@@ -149,7 +168,9 @@ body {
 		}
 	
 		&__video{
-			min-width: 600px;
+			flex: 1 1 auto;
+			padding: 114px 0;
+			max-width: 600px;
 			height: 320px;
 			border-radius: 5px;
 			border: 1px solid #061e37;
@@ -157,7 +178,6 @@ body {
 		}
 		&__video-play{
 			text-align: center;
-			margin: 115px 0 0 0;
 		}
 		&__video-text{
 			color: #061e37;
@@ -177,7 +197,6 @@ body {
 // Блок Easy
 
 .easy {
-
 
 	&__container{
 		margin: 0 auto;
@@ -226,7 +245,6 @@ body {
 		}
 		@media (max-width:767px) {
 			display: block;
-			margin: 0 auto;
 		}
 	}
 
@@ -234,7 +252,7 @@ body {
 		flex: 0 1 33,3%;
 		text-align: center;
 		max-width: 365px;
-		margin: 0 0 78px;
+		margin: 0 auto 78px;
 		padding: 0 10px;
 	}
 
