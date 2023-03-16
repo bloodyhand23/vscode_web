@@ -22,6 +22,16 @@ body {
 			margin: 0 auto;
 			padding: 0 10px 187px;
 			font-family: Raleway;
+			@media (max-width:1200px) {
+			}
+			@media (max-width:992px) {
+				justify-content: center;
+				padding: 0 20px 100px;
+			}
+			@media (max-width:767px) {
+				justify-content: center;
+				padding: 0 20px 100px;
+			}
 		}
 
 		&__row {
@@ -87,10 +97,11 @@ body {
 				margin: 0 auto;
 			}
 			@media (max-width:992px) {
-				max-width: 750px;
+				margin: 0 auto;
+				display: block;
 			}
 			@media (max-width:767px) {
-				max-width: none;
+				margin: 0 auto;
 			}
 		}
 	
@@ -102,10 +113,10 @@ body {
 				margin: 0 auto;
 			}
 			@media (max-width:992px) {
-				max-width: 750px;
+				margin: 0 auto 50px;
 			}
 			@media (max-width:767px) {
-				max-width: none;
+				margin: 0 auto 50px;
 			}
 		}
 	
@@ -116,6 +127,18 @@ body {
 			line-height: 65px;
 			text-transform: uppercase;
 			margin: -13px 0 15px 0;
+			@media (max-width:1200px) {
+				max-width: 475px;
+			}
+			@media (max-width:992px) {
+				max-width: 475px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			@media (max-width:767px) {
+				text-align: center;
+				font-size: 50px;
+			}
 		}
 	
 		&__text {
@@ -124,11 +147,30 @@ body {
 			font-size: 18px;
 			line-height: 35px;
 			margin: 0 0 28px 0;
-			
+			@media (max-width:1200px) {
+			}
+			@media (max-width:992px) {
+				margin: 15px auto 30px;
+				text-align: center;
+			}
+			@media (max-width:767px) {
+				margin: 15px auto 30px;
+				text-align: center;
+			}
 		}
 	
 		&__button {
 			display: flex;
+			@media (max-width:1200px) {
+			}
+			@media (max-width:992px) {
+				max-width: 750px;
+				justify-content: center;
+			}
+			@media (max-width:767px) {
+				max-width: none;
+				justify-content: center;
+			}
 		}
 	
 		&__bye {
@@ -174,7 +216,16 @@ body {
 			height: 320px;
 			border-radius: 5px;
 			border: 1px solid #061e37;
+			margin: 0 15px 0 0 ;
 			background:  url("../../img/header/Rounded_Rectangle_2.png") 0 0 /100% 100% no-repeat, url("../../img/header/Rounded_Rectangle_2_copy.png") 0 0 /100% 100% no-repeat;
+			@media (max-width:1200px) {
+			}
+			@media (max-width:992px) {
+				margin: 0 auto;
+			}
+			@media (max-width:767px) {
+				margin: 0 auto;
+			}
 		}
 		&__video-play{
 			text-align: center;
@@ -294,10 +345,26 @@ body {
 
 	&__row {
 		display: flex;
+		flex-wrap: wrap;
+		@media (max-width:1200px) {
+		}
+		@media (max-width:992px) {
+		}
+		@media (max-width:767px) {
+			display: block;
+		}
 	}
 
 	&__box {
 		flex: 0 1 25%;
+		@media (max-width:1200px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width:992px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width:767px) {
+		}
 	}
 
 	&__image {
@@ -313,13 +380,26 @@ body {
 		line-height: 25px;
 		text-align: left;
 		padding: 0 0 0 23px;
+		@media (max-width:1200px) {
+		}
+		@media (max-width:992px) {
+		}
+		@media (max-width:767px) {
+		}
 	}
 
 	&__content {
 		display: flex;
-		padding: 45px 0;
+		padding: 45px 23px;
 		align-items: center;
 		justify-content: center;
+		max-height: 150px;
+		@media (max-width:1200px) {
+		}
+		@media (max-width:992px) {
+		}
+		@media (max-width:767px) {
+		}
 	}
 
 	&__content-1 {
@@ -332,6 +412,7 @@ body {
 
 	&__content-3 {
 		background-color: #b388ff;
+		
 	}
 
 	&__content-4 {
