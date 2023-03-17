@@ -532,10 +532,25 @@ body {
 		margin: 0 auto;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width:1200px) {
+		}
+		@media (max-width:992px) {
+		}
+		@media (max-width:767px) {
+			display: block;
+		}
 	}
 
 	&__left {
 		margin: 134px 0;
+		@media (max-width:1200px) {
+		}
+		@media (max-width:992px) {
+		}
+		@media (max-width:767px) {
+			text-align: center;
+			margin: 0 auto;
+		}
 	}
 
 	&__title {
@@ -546,6 +561,16 @@ body {
 		font-weight: 400;
 		margin: 0 0 20px 0;
 		line-height: 55px;
+		@media (max-width:1200px) {
+		}
+		@media (max-width:992px) {
+		}
+		@media (max-width:767px) {
+			text-align: center;
+			max-width:none;
+			padding: 55px 0 0;
+		}
+
 	}
 
 	&__subtitle {
@@ -556,6 +581,15 @@ body {
 		font-weight: 400;
 		line-height: 30px;
 		margin: 0 0 85px 0;
+		@media (max-width:1200px) {
+		}
+		@media (max-width:992px) {
+		}
+		@media (max-width:767px) {
+			text-align: center;
+			max-width:none;
+			margin: 0 0 20px 0;
+		}
 	}
 
 	&__get {		
@@ -572,16 +606,30 @@ body {
 			font-family: Roboto;
 			font-size: 15px;
 			text-transform: uppercase;
+			@media (max-width:1200px) {
+			}
+			@media (max-width:992px) {
+			}
+			@media (max-width:767px) {
+				margin: 0 auto 70px;
+			}
 		}
 	}
 
 	&__right {	
+
 	}
 
 	&__box{
 		margin: 0 0 70px 0;
 		&:last-child{
 			margin: 0;
+			@media (max-width:767px) {
+				padding: 0 0 100px 0;
+			}
+		}
+		@media (max-width:767px) {
+			margin: 0 0 40px 0;
 		}
 	}
 
@@ -597,16 +645,22 @@ body {
 
 	&__right-block {
 		display: flex;	
+		@media (max-width:767px) {
+			display: block;
+		}
 	}
 
 	&__image {
 		display: flex;
 		align-items: center;
 		margin: 0 50px;
+		@media (max-width:767px) {
+			display: block;
+			text-align: center;
+		}
 	}
 
 	&__description-top {
-		width: 650px;
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 		border-radius: 5px;
 		background-color: #ffffff;
@@ -614,7 +668,6 @@ body {
 	}
 
 	&__description-down {
-		width: 650px;
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 		border-radius: 5px;
 		background-color: #ffffff;
