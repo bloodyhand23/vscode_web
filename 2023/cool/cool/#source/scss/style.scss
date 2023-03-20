@@ -495,15 +495,24 @@ body {
 		display: flex;
 		justify-content: space-between;
 		padding: 0 24px 24px;
+		@media (max-width:600px) {
+			display: block;
+			padding: 0 24px 24px;
+		}
 	}
 
 	&__image-content {
 		flex: 0 0 250px;
+		@media (max-width:600px) {
+			display: block;
+			& img{
+				width: 100%;
+			}
+		}
 	}
 
 	&__text-content {
 		margin: 0 0 0 25px;
-		width: 467px;
 		color: #061e37;
 		font-family: Raleway;
 		font-size: 15px;
@@ -513,6 +522,13 @@ body {
 		letter-spacing: 0.45px;
 		& p:nth-child(1){
 			padding: 0 0 36px 0;
+		}
+		@media (max-width:600px) {
+			display: block;
+			margin: 20px auto 0;
+			& p:nth-child(1){
+				padding: 0 0 20px 0;
+			}
 		}
 	}
 }
@@ -723,6 +739,11 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media (max-width:500px) {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
 	}
 
 	&__left {
@@ -796,13 +817,18 @@ body {
 		margin: 0 -10px 20px;
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 450px) {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 	&__element {
 		padding: 0 10px 0;
+		width: 100%;
 		& input{
 			background-color: #fafafa;
-			width: 280px;
+			width: 100%;
 			height: 50px;
 			border-radius: 5px;
 			border: 1px solid #061e37;
@@ -813,29 +839,48 @@ body {
 			line-height: 30px;
 			padding: 20px;
 		}
+		@media (max-width: 450px) {
+			padding: 0 10px 10px;
+		}
 	}
 
 	&__row2 {
 		margin: 0 -10px 20px;
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 450px) {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 	&__row3 {
 		margin: 0 -10px 20px;
+		@media (max-width: 450px) {
+			display: block;
+			margin: 0 auto 20px;
+		}
 	}
 
 	&__row4 {
+		margin: 0 -10px 40px;
 		padding: 0 0 100px 0;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: center;		
+		@media (max-width: 450px) {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			padding: 0 0 50px 0;
+		}
 	}
 
 	&__textarea {
 		padding: 0 10px 0;
+		width: 100%;
 		& textarea{
-			width: 600px;
+			width: 100%;
 			height: 150px;
 			resize: none;
 			background-color: #fafafa;
@@ -852,6 +897,10 @@ body {
 	&__checkbox {
 		display: flex;
 		align-items: center;
+		margin: 0 10px 0;
+		@media (max-width: 450px) {
+			margin: 0 10px 20px;
+		}
 		& input{
 			width: 16px;
 			height: 16px;
@@ -867,6 +916,7 @@ body {
 	}
 
 	&__button {
+		margin: 0 10px 0;
 	}
 }
 
