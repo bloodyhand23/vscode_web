@@ -111,10 +111,6 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.main__dart {
-  background: url("../../img/header/icons/Shape_1.png") 0 0 no-repeat;
-  padding: 0 0 0 40px;
-}
 .main__dart a {
   display: inline-block;
   color: #fff;
@@ -126,6 +122,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__dart a .bolt {
   font-weight: 700;
+  line-height: 15px;
+}
+.main__dart a::before {
+  content: url(../../img/header/icons/Shape_1.png);
+  width: 100px;
+  height: 100px;
 }
 .main__menu {
   font-weight: 600;

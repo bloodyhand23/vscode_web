@@ -38,11 +38,11 @@ body {
 			padding: 60px 0 170px;
 			display: flex;
 			justify-content: space-between;
+
 		}
 
 		&__dart {
-			background:url("../../img/header/icons/Shape_1.png") 0 0 no-repeat;
-			padding: 0 0 0 40px;
+
 		}
 
 		&__dart a{
@@ -55,6 +55,12 @@ body {
 			font-weight: 400;
 			& .bolt{
 				font-weight: 700;
+				line-height: 15px;
+			}
+			&::before{
+				content: url(../../img/header/icons/Shape_1.png);
+				width: 100px;
+				height: 100px;
 			}
 		}
 
@@ -227,9 +233,11 @@ body {
 				margin: 0 auto;
 			}
 		}
+
 		&__video-play{
 			text-align: center;
 		}
+
 		&__video-text{
 			color: #061e37;
 			font-family: Raleway;
@@ -238,6 +246,7 @@ body {
 			text-align: center;
 			text-transform: uppercase;
 		}
+	
 }
 
 .list {
