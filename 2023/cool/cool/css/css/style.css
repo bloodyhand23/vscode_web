@@ -74,10 +74,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #17e0c2;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__body {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main {
   background: url("../../img/header/Color_Fill_1.png") 0 0/cover no-repeat;
 }
 .main__header {
+  padding: 170px 0 0 0;
   background: url("../../img/header/Rectangle_1_copy_2.png") 0 0/cover no-repeat;
 }
 .main__home {
@@ -101,63 +139,6 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: center;
     padding: 0 20px 100px;
   }
-}
-.main__row {
-  padding: 60px 0 170px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.main__dart a {
-  display: inline-block;
-  color: #fff;
-  font-size: 15px;
-  line-height: 15px;
-  text-align: left;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.main__dart a .bolt {
-  font-weight: 700;
-  line-height: 15px;
-}
-.main__dart a::before {
-  content: url(../../img/header/icons/Shape_1.png);
-  width: 100px;
-  height: 100px;
-}
-.main__menu {
-  font-weight: 600;
-}
-.main__menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.main__menu a {
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 25px;
-  margin: 0 25px 0 25px;
-}
-.main__menu a:hover {
-  color: #000;
-}
-.main__registration {
-  font-size: 12px;
-  line-height: 25px;
-}
-.main__registration a {
-  border: 1px solid #fff;
-  color: #ffffff;
-  padding: 6px 20px;
-  border-radius: 2px;
 }
 .main__box {
   display: -webkit-box;

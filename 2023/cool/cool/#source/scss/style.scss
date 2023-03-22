@@ -9,11 +9,56 @@ body {
 .wrapper {
 }
 
+//Меню бургер
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	&::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #17e0c2;
+	}
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header__body {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.header__logo {
+}
+.header__burger {
+}
+.header-menu {
+}
+.header-list {
+}
+.header__registration {
+}
+.header__registration-button {
+}
+
 //На главной странице header и меню
 .main {
 
 	background: url("../../img/header/Color_Fill_1.png") 0 0/cover no-repeat;
 		&__header {
+			padding: 170px 0 0 0;
 			background: url("../../img/header/Rectangle_1_copy_2.png") 0 0/cover no-repeat;
 		}
 
@@ -34,66 +79,72 @@ body {
 			}
 		}
 
-		&__row {
-			padding: 60px 0 170px;
-			display: flex;
-			justify-content: space-between;
 
-		}
 
-		&__dart {
-
-		}
-
-		&__dart a{
-			display: inline-block;
-			color: #fff;
-			font-size: 15px;
-			line-height: 15px;
-			text-align: left;
-			text-transform: uppercase;
-			font-weight: 400;
-			& .bolt{
-				font-weight: 700;
-				line-height: 15px;
-			}
-			&::before{
-				content: url(../../img/header/icons/Shape_1.png);
-				width: 100px;
-				height: 100px;
-			}
-		}
-
-		&__menu {
-			font-weight: 600;
-		}
-
-		&__menu ul{
-			display: flex;
-			align-items: center;
-		}
-
-		&__menu a{
-			color: #ffffff;
-			font-size: 15px;
-			line-height: 25px;
-			margin: 0 25px 0 25px;
-			&:hover{
-				color: #000;
-			}
-		}
-
-		&__registration{
-			font-size: 12px;
-			line-height: 25px;
-		}
-
-		&__registration a{
-			border: 1px solid #fff;
-			color: #ffffff;
-			padding: 6px 20px;
-			border-radius: 2px;
-		}
+		//&__row {
+		//	padding: 60px 0 170px;
+		//	display: flex;
+		//	justify-content: space-between;
+		//}
+//
+		//&__dart {
+		//}
+//
+		//&__dart-row {
+		//	display: flex;
+		//	align-items: center;
+		//}
+//
+		//&__dart-logo {
+		//}
+//
+		//&__dart-name {
+		//	max-width: 150px;
+		//	a{
+		//		color: #ffffff;
+		//		font-family: Raleway;
+		//		font-size: 15px;
+		//		text-align: left;
+		//		text-transform: uppercase;
+		//		padding: 0 0 0 10px;
+		//		span{
+		//			font-weight: 700;
+		//			display: block;
+		//			padding: 0 0 0 10px;
+		//		}
+		//	}
+		//}
+//
+		//&__menu {
+		//	font-weight: 600;
+		//}
+//
+		//&__menu ul{
+		//	display: flex;
+		//	align-items: center;
+		//}
+//
+		//&__menu a{
+		//	color: #ffffff;
+		//	font-size: 15px;
+		//	line-height: 25px;
+		//	margin: 0 25px 0 25px;
+		//	&:hover{
+		//		color: #000;
+		//	}
+		//}
+//
+		//&__registration{
+		//	font-size: 12px;
+		//	line-height: 25px;
+		//}
+//
+		//&__registration a{
+		//	border: 1px solid #fff;
+		//	color: #ffffff;
+		//	padding: 6px 20px;
+		//	border-radius: 2px;
+		//}
 
 		&__box {
 			display: flex;
