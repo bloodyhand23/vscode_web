@@ -90,13 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background-color: #17e0c2;
 }
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 .header__body {
   position: relative;
   z-index: 2;
@@ -106,9 +99,77 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 -10px;
+  padding: 0 10px;
+}
+.header__logo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32px;
+          flex: 0 0 32px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 15px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.header__logo img {
+  max-width: 100%;
+  display: block;
+  padding: 0 10px 0 0;
+}
+.header__logo-name-1line {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Raleway;
+}
+.header__logo-name-2line {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header__menu {
+  margin: 0 auto;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__list li {
+  list-style: none;
+  margin: 0 13px 0;
+}
+.header__link {
+  color: #ffffff;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+}
+.header__link:hover {
+  color: #000;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .main {
@@ -119,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../../img/header/Rectangle_1_copy_2.png") 0 0/cover no-repeat;
 }
 .main__home {
-  max-width: 1460px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 10px 187px;
   font-family: Raleway;
@@ -148,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 -10px;
+  padding: 0 10px;
 }
 @media (max-width: 1200px) {
   .main__box {
@@ -166,7 +228,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .main__content {
-  padding: 0 10px;
   max-width: 600px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 600px;
@@ -193,7 +254,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   line-height: 65px;
   text-transform: uppercase;
-  margin: -13px 0 15px 0;
 }
 @media (max-width: 1200px) {
   .main__title {
@@ -306,7 +366,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 320px;
   border-radius: 5px;
   border: 1px solid #061e37;
-  margin: 0 15px 0 0;
   background: url("../../img/header/Rounded_Rectangle_2.png") 0 0/100% 100% no-repeat, url("../../img/header/Rounded_Rectangle_2_copy.png") 0 0/100% 100% no-repeat;
 }
 @media (max-width: 992px) {

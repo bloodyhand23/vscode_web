@@ -9,6 +9,7 @@ body {
 .wrapper {
 }
 
+
 //Меню бургер
 
 .header {
@@ -26,31 +27,95 @@ body {
 		height: 100%;
 		background-color: #17e0c2;
 	}
+	&__body {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		height: 80px;
+		align-items: center;
+		margin: 0 -10px;
+		padding: 0 10px;
+	}
+
+	&__logo-row{
+		display: flex;
+	}
+
+	&__logo {
+		flex: 0 0 32px;
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 15px;
+		text-align: left;
+		text-transform: uppercase;
+		& img{
+			max-width: 100%;
+			display: block;
+			padding: 0 10px 0 0;
+		} 
+	}
+
+	&__logo-text{
+	}
+
+	&__logo-name-1line {
+		color: #ffffff;
+		font-size: 15px;
+		line-height: 15px;
+		text-align: left;
+		text-transform: uppercase;
+		font-family: Raleway;
+	}
+
+	&__logo-name-2line {
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 15px;
+		line-height: 15px;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&__burger {
+	}
+
+	&__menu {
+		margin: 0 auto;
+	}
+
+	&__list {
+		display: flex;
+		& li{
+			list-style: none;
+			margin: 0 13px 0;
+		}
+	}
+
+	&__link {
+		color: #ffffff;
+		font-family: Raleway;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 25px;
+		text-align: left;
+		&:hover{
+			color: #000;
+		}
+	}
+
+	&__registration {
+	}
+
+	&__registration-button {
+	}
+	
 }
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 10px;
-}
-.header__body {
-	position: relative;
-	z-index: 2;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
-}
-.header__logo {
-}
-.header__burger {
-}
-.header-menu {
-}
-.header-list {
-}
-.header__registration {
-}
-.header__registration-button {
 }
 
 //На главной странице header и меню
@@ -63,7 +128,7 @@ body {
 		}
 
 		&__home {
-			max-width: 1460px;
+			max-width: 1440px;
 			margin: 0 auto;
 			padding: 0 10px 187px;
 			font-family: Raleway;
@@ -79,77 +144,11 @@ body {
 			}
 		}
 
-
-
-		//&__row {
-		//	padding: 60px 0 170px;
-		//	display: flex;
-		//	justify-content: space-between;
-		//}
-//
-		//&__dart {
-		//}
-//
-		//&__dart-row {
-		//	display: flex;
-		//	align-items: center;
-		//}
-//
-		//&__dart-logo {
-		//}
-//
-		//&__dart-name {
-		//	max-width: 150px;
-		//	a{
-		//		color: #ffffff;
-		//		font-family: Raleway;
-		//		font-size: 15px;
-		//		text-align: left;
-		//		text-transform: uppercase;
-		//		padding: 0 0 0 10px;
-		//		span{
-		//			font-weight: 700;
-		//			display: block;
-		//			padding: 0 0 0 10px;
-		//		}
-		//	}
-		//}
-//
-		//&__menu {
-		//	font-weight: 600;
-		//}
-//
-		//&__menu ul{
-		//	display: flex;
-		//	align-items: center;
-		//}
-//
-		//&__menu a{
-		//	color: #ffffff;
-		//	font-size: 15px;
-		//	line-height: 25px;
-		//	margin: 0 25px 0 25px;
-		//	&:hover{
-		//		color: #000;
-		//	}
-		//}
-//
-		//&__registration{
-		//	font-size: 12px;
-		//	line-height: 25px;
-		//}
-//
-		//&__registration a{
-		//	border: 1px solid #fff;
-		//	color: #ffffff;
-		//	padding: 6px 20px;
-		//	border-radius: 2px;
-		//}
-
 		&__box {
 			display: flex;
 			justify-content: space-between;
 			margin: 0 -10px;
+			padding: 0 10px;
 			@media (max-width:1200px) {
 				margin: 0 auto;
 			}
@@ -163,7 +162,6 @@ body {
 		}
 	
 		&__content {
-			padding: 0 10px;
 			max-width: 600px;
 			flex: 0 0 600px;
 			@media (max-width:1200px) {
@@ -183,7 +181,6 @@ body {
 			font-weight: 800;
 			line-height: 65px;
 			text-transform: uppercase;
-			margin: -13px 0 15px 0;
 			@media (max-width:1200px) {
 				max-width: 475px;
 			}
@@ -273,7 +270,6 @@ body {
 			height: 320px;
 			border-radius: 5px;
 			border: 1px solid #061e37;
-			margin: 0 15px 0 0 ;
 			background:  url("../../img/header/Rounded_Rectangle_2.png") 0 0 /100% 100% no-repeat, url("../../img/header/Rounded_Rectangle_2_copy.png") 0 0 /100% 100% no-repeat;
 			@media (max-width:1200px) {
 			}
