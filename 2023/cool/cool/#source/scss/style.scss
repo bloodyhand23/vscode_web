@@ -27,6 +27,7 @@ body {
 		height: 100%;
 		background-color: #17e0c2;
 		z-index: 2;
+
 	}
 	&__body {
 		position: relative;
@@ -101,12 +102,21 @@ body {
 				width: 100%;
 				height: 2px;
 				left: 0;
+				transition: all 0.3s ease 0s;
 			}
 			&::before{
 				top: 0;
 			}
 			&::after{
 				bottom: 0;
+			}
+			&.active::before{
+				transform: rotate(45deg);
+				top: 9px;
+			}
+			&.active::after{
+				transform: rotate(-45deg);
+				bottom: 9px;
 			}
 			& span{
 				background-color: #fff;
@@ -115,6 +125,10 @@ body {
 				height: 2px;
 				left: 0;
 				top: 9px;
+				transition: all 0.3s ease 0s;
+			}
+			&.active span{
+				transform: scale(0);
 			}
 		}
 	}
@@ -124,13 +138,18 @@ body {
 		@media (max-width:767px){
 			z-index: 1;
 			position: fixed;
-			top: 0;
+			top: -100%;
 			left: 0;
 			width: 100%;
 			height: 100%;
 			background-color: #1be8c0;
 			padding: 70px 10px 20px 10px;
+			transition: all 0.3s ease 0s;
+			&.active{
+				top: 0;
+			}
 		}
+
 	}
 
 	&__list {
@@ -167,6 +186,7 @@ body {
 	&__registration {
 		position: relative;
 		z-index: 2;
+		margin: 0 15px 0 0;
 	}
 
 	&__registration-button {
@@ -195,6 +215,9 @@ body {
 		&__header {
 			padding: 170px 0 0 0;
 			background: url("../../img/header/Rectangle_1_copy_2.png") 0 0/cover no-repeat;
+			@media (max-width:767px) {
+				padding: 120px 0 0 0;
+			}
 		}
 
 		&__home {
