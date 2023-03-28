@@ -3,15 +3,19 @@
 // Подключенные шрифты
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
+//Тело и оболочки
 body {
+	@media (max-width:767px){
+		&.lock{
+			overflow: hidden;
+		}
+	}
 }
-
 .wrapper {
 }
+//=========================================================
 
-
-//Меню бургер
-
+// шапка сайта и Меню бургер
 .header {
 	position: fixed;
 	width: 100%;
@@ -27,7 +31,6 @@ body {
 		height: 100%;
 		background-color: #17e0c2;
 		z-index: 2;
-
 	}
 	&__body {
 		position: relative;
@@ -142,6 +145,7 @@ body {
 			left: 0;
 			width: 100%;
 			height: 100%;
+			overflow: auto;
 			background-color: #1be8c0;
 			padding: 70px 10px 20px 10px;
 			transition: all 0.3s ease 0s;
@@ -207,8 +211,10 @@ body {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+//=========================================================
 
-//На главной странице header и меню
+
+//Главная страница
 .main {
 
 	background: url("../../img/header/Color_Fill_1.png") 0 0/cover no-repeat;
@@ -388,14 +394,9 @@ body {
 		}
 	
 }
-
-.list {
-}
-.registration-button {
-}
+//=========================================================
 
 // Блок Easy
-
 .easy {
 
 	&__container{
@@ -487,9 +488,9 @@ body {
 		margin: 0 0 100px 0;		
 	}
 }
+//=========================================================
 
 //Блок статистики
-
 .statistics {
 
 	&__row {
@@ -568,9 +569,9 @@ body {
 		background-color: #ea80fc;
 	}
 }
+//=========================================================
 
 // Блок сервисы
-
 .services {
 	max-width: 820px;
 	padding: 0 10px;
@@ -681,9 +682,9 @@ body {
 		}
 	}
 }
+//=========================================================
 
 // Блок What
-
 .what {
 	background: url("../../img/what/Rectangle_1_copy_3.png") 0 0/cover no-repeat;
 	
@@ -857,9 +858,9 @@ body {
 		line-height: 25px;
 	}
 }
+//=========================================================
 
 // Блок our
-
 .our {
 
 	&__content {
@@ -932,9 +933,9 @@ body {
 		margin: 0 15px 90px;
 	}
 }
+//=========================================================
 
 //блок Связаться с нами
-
 .contact {
 	background-color: #fafafa;
 	&__content {
@@ -1068,9 +1069,9 @@ body {
 		margin: 0 10px 0;
 	}
 }
+//=========================================================
 
 // блок footer
-
 .footer {
 	background-color: #061e37;
 
@@ -1108,6 +1109,9 @@ body {
 
 	&__menu-list {
 		display: flex;
+		@media (max-width:767px) {
+			display: block;
+		}
 		& a{
 			color: #ffffff;
 			font-family: Raleway;
@@ -1166,10 +1170,9 @@ body {
 	}
 
 }
-
+//=========================================================
 
 // готовые блоки
-
 .title {
 	color: #061e37;
 	font-family: Raleway;
@@ -1203,7 +1206,7 @@ body {
 		background-color: #1de9b6;
 	}
 }	
-
+//=========================================================
 
 
 
