@@ -609,7 +609,22 @@ body {
 		text-align: center;
 		text-transform: uppercase;
 	}
+	&__arrow{
+
+	}
 }
+
+.arrow{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 0;
+	height: 0;
+	border-top: 8px solid #000;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+
 .service-sub-menu {
 
 	&__list {
