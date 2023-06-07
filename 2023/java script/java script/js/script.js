@@ -120,3 +120,36 @@ firstFor: for (let num=0; num<2; num++){
 	}
 }
 */
+
+
+/*
+function showName() {
+	console.log('Вася!');
+}
+setTimeout(showName, 0);
+console.log('Коля!');
+*/
+
+/*
+showMessage();
+function showMessage() {
+	console.log('Сообщение');
+}
+*/
+
+/*
+let showMessage = function () {
+	console.log('Сообщение');
+};
+showMessage();
+*/
+
+/*
+let showMessage;
+if (2 > 1) {
+	showMessage = function () {
+		console.log('Сообщение');
+	}
+}
+showMessage();
+*/
